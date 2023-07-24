@@ -24,7 +24,7 @@ format: <format of files e.g. audio/mpeg>
 item:
   - title: <Podcast Episode Title>
     description: <Podcast Episode Description>
-    published: <Date Published - e.g. Thu, 12 Jan 2023 18:00:00 GMT>
+    published: <Date Published - e.g. Thu, 24 Jul 2023 10:35:00 GMT>
     file: <Filename e.g. /audio/TFIT01.mp3>
     duration: <duration e.g. 00:00:36>
     length: <length e.g. 576,324 (Get Info on your files)>
@@ -45,5 +45,5 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
       - name: Run Feed Generator
-        uses: planetoftheweb/podcast-feed-generator@main
+        uses: adrienCrove//Github-actions-podcast-test@main
 ```
