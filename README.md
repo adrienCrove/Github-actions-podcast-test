@@ -45,5 +45,5 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
       - name: Run Feed Generator
-        uses: adrienCrove//Github-actions-podcast-test@main
+        uses: adrienCrove/Github-actions-podcast-test@main
 ```
