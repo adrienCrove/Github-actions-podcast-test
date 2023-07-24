@@ -1,49 +1,19 @@
-# Podcast Feed Generator
+# The Future in Tech
 
-A GitHub action to generate a podcast feed from a YAML file. YAML is much easier to read and write than XML, and this action will convert your YAML file into a valid podcast feed.
-## Usage
+<img src="https://raybo.org/tfit-feed/images/artwork.jpg" width="250">
 
-### Turn on Github Pages
+The [Future in Tech](https://go.raybo.org/tfit) is a weekly series powered by [LinkedIn Learning](https://www.linkedin.com/learning/) hosted by Senior Staff Instructor [Ray Villalobos](https://www.linkedin.com/in/planetoftheweb).
 
-In your repository, go to Settings > Pages and select the main branch as the source. This will create a link to your page and give all of the content in the main branch a URL. Note the URL for the next step.
+You can [watch it on LinkedIn](https://go.raybo.org/tfit-episodes) every Thursday at 2pm ET, 11am PT. The goal of this series is to spark conversations, provide practical tips and resources to help developers work, learn, and tackle challenges related to working in the technology industry.
 
-### Create a YAML file
+We're talking about Generative AI tools like ChatGPT, Dall-E*2, Hugging Face by talking to some of the leaders delivering the tools, strategies and technologies that make working in technology exciting. We'll discuss how they broke into technology, business strategies, ethical concerns and technical skills.
 
-Create a YAML file in your repository with the following format:
+You have a chance to hear from people who are not just talking about, but building the next generation tools like Open AI and leaders who've worked for and with Fortune 500 companies like Microsoft, Google, LinkedIn,  IBM,  Open AI and more.
 
-```yaml
-title: <Podcast Title>
-subtitle: <Podcast Subtitle>
-author: <Author Name>
-description: <Podcast Description>
-link: <GitHub Pages URL>
-image: <Artwork Location>
-language: <Podcast Language e.g. en-us>
-category: <Postcast Category e.g. Technology https://podcasters.apple.com/support/1691-apple-podcasts-categories>
-format: <format of files e.g. audio/mpeg>
-item:
-  - title: <Podcast Episode Title>
-    description: <Podcast Episode Description>
-    published: <Date Published - e.g. Thu, 24 Jul 2023 10:35:00 GMT>
-    file: <Filename e.g. /audio/TFIT01.mp3>
-    duration: <duration e.g. 00:00:36>
-    length: <length e.g. 576,324 (Get Info on your files)>
-  ... Repeat for each episode
-```
-
-### Sample Workflow
-
-You're also going to need your own workflow file. Here's a sample:
-
-```yaml
-name: Generate Feed
-on: [push]
-jobs:
-  generate-feed:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
-      - name: Run Feed Generator
-        uses: adrienCrove/Github-actions-podcast-test@main
-```
+---
+## More Info
+- [The Future in Tech Page](https://go.raybo.org/tfit)
+- [Episode Guide](https://go.raybo.org/tfit-episodes)
+- [YouTube Playlist](https://go.raybo.org/tfit-youtube)
+- [Podcast Feed - Audio Only](https://go.raybo.org/tfit-feed-audio)
+- [Episode Newsletter](https://go.raybo.org/tfit-newsletter)
